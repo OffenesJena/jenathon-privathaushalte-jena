@@ -16,5 +16,5 @@ Zu untersuchen nach eigenem Kenntnisstand zu den Ortsteilen:
 
 ## Beispiele
 
-![Altersgruppen](/example/altergruppen.png)
+![Altersgruppen](altergruppen.png)
 
