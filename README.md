@@ -14,7 +14,7 @@ Zu untersuchen nach eigenem Kenntnisstand zu den Ortsteilen:
 - Wie sehen aktuelle Strukturen aus?
 - Wie haben sich die Strukturen über die Zeit entwickelt?
 
-## Beispiele
+## Beispiel
 
-![Altersgruppen](altergruppen.png)
+![Altersgruppen](/altersgruppen.png)
 
