@@ -15,7 +15,7 @@ Einfärben von [Ortsteilen](https://opendata.jena.de/dataset/ortsteile) der Stad
 
 **Technologische Umsetzung**
 
-- [R Project](https://www.r-project.org) (bei genügend Vorkenntnissen): [R Studio](https://www.rstudio.com), [Tutorial](http://tryr.codeschool.com), [Buch](http://r4ds.had.co.nz/model-basics.html)
+- [R Project](https://www.r-project.org) (bei genügend Vorkenntnissen): [R Studio](https://www.rstudio.com), [Tutorial](http://tryr.codeschool.com), [Buch](http://r4ds.had.co.nz/model-basics.html) (3 Data Visualization, 5 Data Transformation und ggf. 11 Data Import), [R Studio Webinars](https://www.rstudio.com/resources/webinars/) ([Data Wrangling](https://www.rstudio.com/resources/webinars/data-wrangling-with-r-and-rstudio/), [Grammer & Graphics](https://www.rstudio.com/resources/webinars/the-grammar-and-graphics-of-data-science/), [Getting data into R](https://www.rstudio.com/resources/webinars/getting-your-data-into-r/)).
 - [leaflet](http://leafletjs.com)
 - Sprache nach Wahl und Erfahrungsschatz
 
