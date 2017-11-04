@@ -75,5 +75,9 @@ hh_final <- hh %>%
     ratio_last_year = lag(ratio),
     chg_ratio = (ratio - ratio_last_year)/ratio_last_year) %>% 
   ungroup() %>% 
-  select(-ratio_last_year)
+  select(-ratio_last_year) %>% 
+  # Remove sum values etc.
+  filter(grp != "sum"
+         & reg_id != "0"
+         & !is.na(chg_ratio))    # Jena (gesamt)
 
