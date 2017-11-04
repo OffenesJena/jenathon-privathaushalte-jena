@@ -1,6 +1,6 @@
 library(ggplot2)
 
-
+source("R/func.R")
 
 # Change by year and district ---------------------------------------------
 
@@ -78,4 +78,22 @@ viz_data_sum <- viz_data_v4 %>%
   summarise(chg_ratio = sum(chg_ratio)) %>% 
   arrange(desc(chg_ratio))
 
-ggplot(viz_data_sum, aes(x = reg_name))
+ggplot(viz_data_sum, aes(x = reorder_by(reg_name, chg_ratio), y = chg_ratio)) +
+  geom_bar(stat = "identity", aes(fill = if_else(chg_ratio > 0, "p", "n"))) +
+  coord_flip() +
+  scale_fill_manual(values = c("p" = "#2ecc71", "n" = "#e74c3c")) +
+  guides(fill = "none") +
+  labs(
+    title = "Veränderung Anteil Einpersonenhaushalte 60plus 2007 bis 2016", 
+    x = NULL, 
+    y = "Veränderung Anteil Einpersonenhaushalte 60plus") +
+  theme_minimal() +
+  theme(
+    strip.text.y = element_text(angle = 180, hjust = 1),
+    panel.grid.major.y = element_blank(),
+    # panel.grid.major.x = element_blank(),
+    panel.grid.minor.y = element_blank())
+ggsave("figures/6 plot.png", width = 12, height = 8)
+
+
+  
