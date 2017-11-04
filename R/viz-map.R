@@ -28,7 +28,8 @@ ggplot() +
     data = map_data,
     aes(x = long, y = lat, group = group, fill = chg_ratio_interval),
     color = "grey35", size = 0.251) +
-  coord_equal() +
+  # Ratio = 1.6 is just a workaround. Use coord_equal() + correct projection instead.
+  coord_fixed(ratio = 1.6) +
   scale_y_continuous(labels = NULL, breaks = NULL) +
   scale_x_continuous(labels = NULL, breaks = NULL) +
   labs(title = "Veränderung Anteil Einpersonenhaushalte 60plus 2007 bis 2016 (Projektion noch nicht i.O.)", 
